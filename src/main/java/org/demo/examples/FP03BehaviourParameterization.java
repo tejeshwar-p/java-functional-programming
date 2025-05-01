@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class FP04BehaviourParameterization {
+public class FP03BehaviourParameterization {
 
     public static void main(String[] args) {
         List<Integer> numbers = List.of(12, 9, 3, 4, 6, 2, 4, 12, 15);

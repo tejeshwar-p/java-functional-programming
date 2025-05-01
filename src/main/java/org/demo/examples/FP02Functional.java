@@ -106,80 +106,80 @@ public class FP02Functional {
     }
     return sum;*/
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getOnlyXValueFunctional(List<Integer> numbers) {
         return numbers.stream().reduce(0, (x, y) -> x);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getOnlyYValueFunctional(List<Integer> numbers) {
         return numbers.stream().reduce(0, (x, y) -> y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getMaximumPositiveValueFunctional(List<Integer> numbers) {
         return numbers.stream().reduce(0, (x, y) -> x > y ? x : y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getMaximumValueFunctional(List<Integer> numbers) {
         return numbers.stream().reduce(Integer.MIN_VALUE, (x, y) -> x > y ? x : y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getMininumValueFunctional(List<Integer> numbers) {
         return numbers.stream().reduce(Integer.MAX_VALUE, (x,y)-> x < y ? x : y );
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getSumOfSquaresFunctional(List<Integer> numbers) {
         return numbers.stream().map(no -> no*no)
                 .reduce(0, (x, y) -> x + y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getSumOfCubesFunctional(List<Integer> numbers){
         return numbers.stream().map(no -> no * no * no)
                 .reduce(0,(x,y)-> x + y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static int getSumOfOddNumbersFunctional(List<Integer> numbers) {
         return numbers.stream().filter(n -> n % 2 != 0)
                 .reduce(0, (x, y) -> x + y);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printDistinctNumbers(List<Integer> numbers) {
         numbers.stream().distinct().forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printSortedNumbers(List<Integer> numbers) {
         numbers.stream().sorted().forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printDistinctSortedNumbers(List<Integer> numbers) {
         numbers.stream().distinct().sorted().forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printSortedCourses(List<String> courses) {
         courses.stream().sorted().forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printNaturalOrderSortedCourses(List<String> courses) {
         courses.stream().sorted(Comparator.naturalOrder()).forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printReverseOrderSortedCourses(List<String> courses) {
         courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
     }
 
-    //Below program was done using JShell. Keeping here for reference.
+    //Below code was done using JShell. Keeping here for reference.
     private static void printLengthOrderSortedCourses(List<String> courses) {
         courses.stream().sorted(Comparator.comparing(str -> str.length())).forEach(System.out::println);
     }
